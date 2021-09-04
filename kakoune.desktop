@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Kakoune
+Exec=kitty -e kak
+Icon=/home/person/Pictures/Icons\Logos/kakoune.png
+Terminal=false
