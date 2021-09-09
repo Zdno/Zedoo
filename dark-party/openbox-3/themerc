@@ -23,7 +23,7 @@ menu.items.active.bg.color:     #15171C
 menu.items.active.text.color:   #08E399
 
 # Active window
-window.active.border.color:                           #14161B
+window.active.border.color:                           #00008b
 
 window.active.title.bg:                               solid flat
 window.active.title.bg.color:                         #14161B
