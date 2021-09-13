@@ -25,10 +25,10 @@ menu.items.active.text.color:   #08E399
 # Active window
 window.active.border.color:                           #00008b
 
-window.active.title.bg:                               solid flat
-window.active.title.bg.color:                         #14161B
-window.active.title.separator.color:                  #14161B
-window.active.text.justify:                           center
+# window.active.title.bg:                               solid flat
+# window.active.title.bg.color:                         #14161B
+# window.active.title.separator.color:                  #14161B
+# window.active.text.justify:                           center
 
 window.active.label.bg:                               parentrelative
 window.active.label.text.color:                       #14161B
