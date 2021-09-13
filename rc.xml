@@ -41,6 +41,7 @@
        following: 'Mouse' - where the mouse is, or
                   'Active' - where the active window is -->
   </placement>
+  <action name="ToggleDecorations"/>
   <theme>
     <name>dark-party</name>
     <titleLayout>NLIMC</titleLayout>
@@ -55,7 +56,7 @@
       D: omnipresent (on all desktops).
   -->
     <keepBorder>yes</keepBorder>
-    <animateIconify>yes</animateIconify>
+    <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Liberation Sans</name>
       <size>8</size>
@@ -165,7 +166,7 @@
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
     <noStrut>no</noStrut>
-    <stacking>Above</stacking>
+    <stacking>Below</stacking>
     <!-- 'Above', 'Normal', or 'Below' -->
     <direction>Vertical</direction>
     <!-- 'Vertical' or 'Horizontal' -->
@@ -191,32 +192,31 @@
         <command>synapse</command>
       </action>
     </keybind>
-	<keybind key="super-Right">
+    <keybind key="super-Right">
       <action name="DirectionalCycleWindows">
-		<direction>east</direction>
-		<raise>yes</raise>
-	  </action>
+        <direction>east</direction>
+        <raise>yes</raise>
+      </action>
     </keybind>
-	<keybind key="super-Left">
+    <keybind key="super-Left">
       <action name="DirectionalCycleWindows">
-		<direction>west</direction>
-		<raise>yes</raise>
-	  </action>
+        <direction>west</direction>
+        <raise>yes</raise>
+      </action>
     </keybind>
- 	<keybind key="super-Down">
+    <keybind key="super-Down">
       <action name="DirectionalCycleWindows">
-		<direction>south</direction>
-		<raise>yes</raise>
-	  </action>
+        <direction>south</direction>
+        <raise>yes</raise>
+      </action>
     </keybind>
- 	<keybind key="super-Up">
+    <keybind key="super-Up">
       <action name="DirectionalCycleWindows">
-		<direction>north</direction>
-		<raise>yes</raise>
-	  </action>
-	</keybind>
-
-     <keybind key="super-t">
+        <direction>north</direction>
+        <raise>yes</raise>
+      </action>
+    </keybind>
+    <keybind key="super-t">
       <action name="Execute">
         <command>kitty</command>
       </action>
@@ -231,7 +231,6 @@
         <command>librewolf</command>
       </action>
     </keybind>
-    
     <keybind key="super-space">
       <action name="If">
         <query target="default">
@@ -255,97 +254,79 @@
     <keybind key="super-j">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>100%</height>
-      </action>
-      <action name="MoveToEdge">
-        <direction>west</direction>
+        <width>495/1000</width>
+        <height>990/1000</height>
+        <x>5</x>
+        <y>5</y>
       </action>
     </keybind>
     <keybind key="super-i">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveToEdge">
-        <direction>north</direction>
+        <width>990/1000</width>
+        <height>495/1000%</height>
+        <y>5</y>
       </action>
     </keybind>
     <keybind key="super-comma">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>100%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveToEdge">
-        <direction>south</direction>
+        <width>990/1000</width>
+        <height>495/1000</height>
+        <y>-5</y>
       </action>
     </keybind>
     <keybind key="super-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>100%</height>
-      </action>
-      <action name="MoveToEdge">
-        <direction>east</direction>
+        <width>495/1000</width>
+        <height>990/1000</height>
+        <x>-5</x>
       </action>
     </keybind>
     
     <keybind key="super-u">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>50%</height>
+        <width>495/1000</width>
+        <height>490/1000</height>
+        <x>5</x>
+        <y>5</y>
       </action>
     </keybind>
     <keybind key="super-o">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveResizeTo">
-		<x>-0</x>
-		<y>0</y>
+        <width>495/1000</width>
+        <height>490/1000</height>
+        <x>-5</x>
+        <y>5</y>
       </action>
     </keybind>
     <keybind key="super-period">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveResizeTo">
-		<x>-0</x>
-		<y>-0</y>
-      </action>
-    </keybind>
-    <keybind key="super-u">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveResizeTo">
-		<x>0</x>
-		<y>0</y>
+        <width>495/1000</width>
+        <height>490/1000</height>
+        <x>-5</x>
+        <y>-5</y>
       </action>
     </keybind>
     <keybind key="super-m">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
-        <width>50%</width>
-        <height>50%</height>
-      </action>
-      <action name="MoveResizeTo">
-		<x>0</x>
-		<y>-0</y>
+        <width>495/1000</width>
+        <height>490/1000</height>
+        <x>5</x>
+        <y>-5</y>
       </action>
     </keybind>
-    </keyboard>
-    <mouse>
+    
+    <keybind key="super-h">
+      <action name="ToggleDecorations"/>
+    </keybind>
+  </keyboard>
+  <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
     <doubleClickTime>500</doubleClickTime>
@@ -770,5 +751,11 @@
 
   # end of the example
 -->
+    <application class="*">
+      <decor>no</decor>
+      <maximized>true</maximized>
+      <focus>yes</focus>
+      <layer>normal</layer>
+    </application>
   </applications>
 </openbox_config>
