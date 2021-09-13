@@ -23,3 +23,10 @@ super-period move window to bottom right
 super-space - toggle maximize*  
 super-arrow_keys - directional focus switch  
 super-scroll - scroll desktops
+
+When tiling windows like this it leaves a 5 pixel wide gap between edges.
+
+# Dark-Party
+
+Slightly modified version of this https://store.kde.org/p/1281850/ theme  
+The modification is a blue border around the focused window
